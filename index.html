@@ -66,21 +66,9 @@
             <img src="date.gif"/>
             <form>
                 <a href="yes.html"><button type="button">YES</button></a> 
-                <a href="#"><button type="button" id="btn">NO</button></a>
+                <a href="#"><button disabled>NO</button></a>
                 
             </form>
         </div>
-        <script>
-            let movedRight = false; 
-          
-            document.getElementById('btn').addEventListener('click', () => {
-              if (movedRight) {
-                document.getElementById('btn').style.transform = 'translateX(0px)'; 
-              } else {
-                document.getElementById('btn').style.transform = 'translateX(100px)'; 
-              }
-              movedRight = !movedRight;
-            });
-          </script>
     </body>
 </html>
