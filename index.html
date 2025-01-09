@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Can I date you</title>
+        <style>
+            body{
+                background-color:#A888B5;
+            }
+            .container{
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+                align-items:center;
+                text-align:center;
+            }
+            
+            .container img{
+                max-width:600px;
+                margin:auto;
+            }
+            .container button{
+               margin-top:50px; 
+               background-color:purple;
+               color:white;
+               padding:5px 15px;
+               border-radius:20px;
+               position:relative;
+               cursor:pointer;
+               transition:0.5s ease;
+               margin-left:10px;
+               margin-right:10px;
+               font-size:20pt;
+            }
+            .container button:hover {
+                padding: 5px 20px;
+             }
+            
+            
+            
+            @media screen and (max-width: 768px) {
+                .container button {
+                    padding: 5px 10px;
+                    font-size: 18px;
+                }
+            
+                .container img {
+                    max-width: 100%;
+                }
+            }
+            
+            @media screen and (max-width: 480px) {
+                .container button {
+                    padding: 5px 10px;
+                    font-size: 14px;
+                }
+            
+                .container img {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="date.gif"/>
+            <form>
+                <a href="yes.html"><button type="button">YES</button></a> 
+                <a href="#"><button type="button" id="btn">NO</button></a>
+                
+            </form>
+        </div>
+        <script>
+            let movedRight = false; 
+          
+            document.getElementById('btn').addEventListener('mouseover', () => {
+              if (movedRight) {
+                document.getElementById('btn').style.transform = 'translateX(0px)'; 
+              } else {
+                document.getElementById('btn').style.transform = 'translateX(100px)'; 
+              }
+              movedRight = !movedRight;
+            });
+          </script>
+    </body>
+</html>
